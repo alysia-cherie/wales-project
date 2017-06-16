@@ -1,10 +1,15 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
+  skills = ["HTML", "CSS", "JavaScript", "Ruby", "Rails", "SQL", "Elixir", "Phoenix", "React", "jQuery"]
+
+
+
+
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @skills = ["HTML", "CSS", "JavaScript", "Ruby", "Rails", "SQL", "Elixir", "Phoenix", "React", "jQuery"]
   end
 
   # GET /users/1
